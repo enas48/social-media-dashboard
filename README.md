@@ -10,5 +10,5 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
 
-[Demo](https://enas48.github.io/social-media-dashboard/)
+[my-live-Demo](https://enas48.github.io/social-media-dashboard/)
 
