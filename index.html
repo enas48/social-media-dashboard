@@ -1,87 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | [dashboard with theme switcher]</title>
 </head>
 <body>
+  <div class="top-pattern"></div>
+<div class="container">
+  <header>
+    <div class="heading">
+  <h1>Social Media Dashboard</h1>
+  <span>Total Followers: 23,004</span>
+    </div>
+<div class="toggle-switch">
+  <span>Dark Mode</span>
+ <!-- switch -->
+<label class="switch" >
+  <input type="checkbox" onchange="toggleTheme()" id="slider">
+  <span class="slider"></span>
+</label>
+</div>
+  </header>
+<main>
+  <section>
+    <div class="card overview facebook">
+      <div>
+        <img src="./images/icon-facebook.svg" alt="facebook-icon"/>
+        <span>@nathanf</span>
+      </div>
+      <p>1987</p>
+      <span>Followers</span>
+      <div class="state-up">
+        <img src="./images/icon-up.svg"/>
+      <span>12 Today</span>
+      </div>
+    </div>
+    <div class="card overview twitter">
+      <div>
+        <img src="./images/icon-twitter.svg" alt="twitter-icon"/>
+      <span>@nathanf</span>
+      </div>
+      <p>1044</p>
+      <span>Followers</span>
+      <div class="state-up">
+        <img src="./images/icon-up.svg"/>
+      <span>99 Today</span>
+      </div>
+    </div>
+    <div class="card overview instagram">
+      <div>
+       <img src="./images/icon-instagram.svg" alt="instagram-icon"/> 
+      <span>@realnathanf</span>
+      </div>
+      <p>11k</p>
+      <span>Followers</span>
+      <div class="state-up">
+        <img src="./images/icon-up.svg"/>
+      <span>1099 Today</span>
+      </div>
+    </div>
+    <div class="card overview youtube">
+      <div>
+        <img src="./images/icon-youtube.svg" alt="youtube-icon"/>
+      <span>Nathan F.</span>
+      </div>
+      <p>8239</p>
+      <span>Subscribers</span>
+      <div class="state-down">
+        <img src="./images/icon-down.svg"/>
+        <span>144 Today</span>
+      </div>
+    </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  </section>
+<h2>Overview - Today</h2>
+  <section>
+    <div class="card today-overview">
+      <div>
+        <span>Page Views</span>
+        <img src="./images/icon-facebook.svg" alt="facebook-icon"/>
+      </div>
+      <div>
+        <p>87</p>
+        <div class="state-up">
+          <img src="./images/icon-up.svg"/>
+          <span>3%</span>
+        </div>
+        </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Likes</span>
+        <img src="./images/icon-facebook.svg" alt="facebook-icon"/>
+      </div>
+      <div>
+        <p>52</p>
+        <div class="state-down">
+          <img src="./images/icon-down.svg"/>
+          <span>2%</span>
+        </div>
+        </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Likes</span>
+        <img src="./images/icon-instagram.svg" alt="instgram-icon"/>
+      </div>
+      <div>
+        <p>5462</p>
+        <div class="state-up">
+          <img src="./images/icon-up.svg"/>
+          <span>2257%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Profile Views</span>
+        <img src="./images/icon-instagram.svg" alt="instagram-icon"/>
+      </div>
+      <div>
+        <p>52k</p>
+        <div class="state-up">
+          <img src="./images/icon-up.svg"/>
+          <span>1375%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Retweets</span>
+        <img src="./images/icon-twitter.svg" alt="twitter-icon"/>
+      </div>
+      <div>
+        <p>117</p>
+        <div class="state-up">
+          <img src="./images/icon-up.svg"/>
+          <span>303%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Likes</span>
+        <img src="./images/icon-twitter.svg" alt="twitter-icon"/>
+      </div>
+      <div>
+        <p>507</p>
+        <div class="state-up">
+          <img src="./images/icon-up.svg"/>
+          <span>553%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Likes</span>
+        <img src="./images/icon-youtube.svg" alt="youtube-icon"/>
+      </div>
+      <div>
+        <p>107</p>
+        <div class="state-down">
+          <img src="./images/icon-down.svg"/>
+          <span>19%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card today-overview">
+      <div>
+        <span>Total Views</span>
+        <img src="./images/icon-youtube.svg" alt="youtube-icon"/>
+      </div>
+      <div>
+        <p>1407</p>
+        <div class="state-down">
+          <img src="./images/icon-down.svg"/>
+          <span>12%</span>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+</main>
+<footer>
+   <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">enas</a>.</p>
+    </footer>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
